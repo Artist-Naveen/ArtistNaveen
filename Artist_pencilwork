@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen Chandrashekar - Artist</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #666;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .section {
+            padding: 50px 0;
+        }
+        .section:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Naveen Chandrashekar - Acrylic Artist</h1>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm Naveen Chandrashekar, an artist specializing in acrylic paintings. My work is inspired by the beauty of nature, vibrant colors, and abstract forms. I love to express my creativity through my art and share it with the world.</p>
+        </section>
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="https://photos.google.com/photo/AF1QipMIM3IGishLFjWu1fSKhrDr1zkD248zgxUE0AMb" alt="Art Piece 1">
+                <img src="https://photos.google.com/photo/AF1QipNluXjAbu4ntzORxTuCwXROD7iXcxzQKMRTKorD" alt="Art Piece 2">
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Naveen Chandrashekar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
